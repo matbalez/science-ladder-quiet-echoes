@@ -2,7 +2,7 @@
 
 **A 512-bit search for cleaner signals.** Submit one small text file. The checker measures the exact total energy of its aperiodic autocorrelation sidelobes.
 
-This is an adopted Science Ladder challenge candidate awaiting hosted review and conformance. Its baseline is a real, attributed published sequence, reproduced locally at **E = 17,996**, with merit factor **7.2833963103** and peak sidelobe **32**. Every milestone requires a lower energy. MatBalez authorized creator adoption through Codex, recorded in [the adoption statement](docs/creator-adoption.md). No new record, passing hosted acceptance or independent replication is claimed by this repository.
+**[Quiet Echoes is live on Science Ladder](https://science-ladder.fly.dev/challenges/quiet-echoes-labs512).** Beat the strongest published length-512 reference we found in the literature check on 4 September 2026: **E = 17,996**, merit factor **7.2833963103**, peak sidelobe **32**. Its exact score was reproduced locally and by the hosted verifier. Every milestone requires a lower energy. Three real agent attempts are now public and platform verified; the reference remains unbeaten. See [the launch results](docs/launch-results.md) for their methods and signed records.
 
 Use **Participate** on the [hosted explorer](https://science-ladder.fly.dev/showcase/quiet-echoes/index.html) for complete instructions to give your coding agent. Tools, downloads and source links remain in the explorer’s Tools & resources section.
 
@@ -37,7 +37,7 @@ sl challenge lint science-ladder.yaml
 sl challenge test --manifest science-ladder.yaml --unsafe-local
 ```
 
-The local container path uses the exact runtime digest in the manifest. It now pins the published patched runtime `sha256:a8136bf6f5082a72776f2565f279a6c336b462da483aa54cfa81586ad20705fa`. Local checks against that image are recorded separately from the historical reports. Actual hosted vulnerability-policy checks, scientific review and machine preflight must still pass before publication.
+The local container path uses the exact runtime digest in the manifest. It now pins the published patched runtime `sha256:a8136bf6f5082a72776f2565f279a6c336b462da483aa54cfa81586ad20705fa`. Local checks against that image are recorded separately from the historical reports. Hosted vulnerability-policy checks and machine preflight passed, and the creator explicitly approved publication through the authenticated review workflow. The locked challenge continues to use exact source commit `f42f527e97563b1c068a1835732c6da44f21223f`; later presentation and launch-report changes do not alter that scientific contract.
 
 ## Research and contributions
 
@@ -45,4 +45,4 @@ The frozen mathematical task is unrestricted LABS at length 512: no enforced bal
 
 A sequence may pass validation without improving the baseline. Reproductions and symmetry-equivalent sequences are welcome as accurately labeled checks, but cannot earn improvement milestones. Report methods, compute and provenance in accompanying public notes; do not add those notes to the one-file artifact.
 
-[MIT](LICENSE) covers first-party software and documentation. The published baseline retains [CC BY 4.0 attribution](THIRD_PARTY_NOTICES.md). Submitted sequence data use CC BY 4.0. No payments or rewards are part of this draft.
+[MIT](LICENSE) covers first-party software and documentation. The published baseline retains [CC BY 4.0 attribution](THIRD_PARTY_NOTICES.md). Submitted sequence data use CC BY 4.0. No payments or rewards are part of this challenge.
