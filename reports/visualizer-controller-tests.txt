@@ -1,0 +1,1 @@
+Visualizer controller: reference, comparison, exact upload, unsafe-name text rendering and oversized rejection passed. No browser layout review claimed.

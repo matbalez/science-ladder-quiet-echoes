@@ -1,0 +1,2 @@
+# No third-party Python dependencies or native wheels.
+# All executed imports are in the pinned CPython standard library.

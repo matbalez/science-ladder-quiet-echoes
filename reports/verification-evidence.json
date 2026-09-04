@@ -1,0 +1,53 @@
+{
+  "kind": "LocalVerificationEvidence",
+  "official": false,
+  "createdAt": "2026-09-04T22:24:28.652648+00:00",
+  "runtimeImageDigest": "sha256:05495e2d81737a66d6bdef513afffa5c3eccba4aa98723e5b13a2a35e2a204f0",
+  "verificationPolicy": "platform",
+  "scope": "Local tests and conformance only. No platform receipt, creator adoption, vulnerability approval or independent replication.",
+  "host": {
+    "python": "3.14.5",
+    "system": "Darwin",
+    "architecture": "arm64",
+    "unitTests": 16,
+    "result": "pass"
+  },
+  "linuxContainer": {
+    "python": "3.13.15",
+    "platform": "linux/amd64",
+    "unitTests": 16,
+    "result": "pass",
+    "readOnly": true,
+    "network": "none",
+    "imageDigest": "sha256:05495e2d81737a66d6bdef513afffa5c3eccba4aa98723e5b13a2a35e2a204f0"
+  },
+  "conformance": {
+    "fixtures": 7,
+    "passed": 7,
+    "report": "local-container-fixtures.json"
+  },
+  "visualizer": {
+    "controllerTests": "pass",
+    "browserVisualReview": "Parent agent /root reports actual IAB review at1280x720 completed with good layout; this frontend agent had no available browser surface.",
+    "localPreviewUrl": "http://127.0.0.1:8767/visualize.html"
+  },
+  "priorFailure": {
+    "report": "initial-conformance-before-input-classification-fix.json",
+    "finding": "A nonzero checker exit was correctly classified as challenge_fault; invalid input contents now produce failed hard gates and malformed transport fixture is rejected before checker execution."
+  },
+  "commands": [
+    "python3 tools/reproduce.py --check",
+    "python3 -m unittest discover -s tests -v",
+    "node tests/test_visualizer.mjs",
+    "sl candidate lint science-ladder-candidate.yaml",
+    "sl challenge lint science-ladder.yaml",
+    "sl challenge test --manifest science-ladder.yaml --unsafe-local"
+  ],
+  "sourceFiles": {
+    "checker.py": "sha256:d91fe00eaf9e9c2ae25d3765e431b4a496d34a8b55cea2f77fd2538ff1b91c7b",
+    "science-ladder.yaml": "sha256:e0fd439279b85943e94eaa83f9f9fa8143a51894f10a562f25f1c2ad539bf911",
+    "science-ladder-candidate.yaml": "sha256:aa011f3fde578e7ff2308d986613194b01f76d6de1133951fabe4b513c19bb3b",
+    "requirements.lock": "sha256:6d01d014d3d7781e1a469f5972072c52303a8898e133b3f4b2db3ac84f32f4ad",
+    "suite/contract.json": "sha256:0b52728b1b11479ce24e5ab89b6dcc528df9a8f68c7965077dfa74b639b21e1c"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "promptVersion": "1.1.0",
+  "promptSha256": "56f9c66dcfffd40feecbeb4c0caed02b850a96e4f911e0daa804ef945c37746d",
+  "model": "GPT-6 (Codex; self-attested model family, deployment identifier unavailable)",
+  "producer": "Codex assistant using Challenge Scout; prepared for MatBalez, adoption pending",
+  "startedFrom": "User asked for math/physics with strong visuals and possible scientific impact. Root approved LABS512 after shortlist.",
+  "inputs": {
+    "fieldOrTopic": "Discrete mathematics and signal physics",
+    "suspectedOpenQuestion": "Blank; investigated by scout",
+    "seedPapers": "None supplied; primary papers discovered during research",
+    "resources": "Publicly licensed published sequence; pure Python standard library",
+    "maximumOfficialCompute": "CPU 1, 128 MiB, 5 seconds, 4096 output bytes; provisional pending preflight",
+    "otherConstraints": "Data-only artifacts; one scalar exact score; first-party MIT; no novel-result or independent-review claim"
+  },
+  "sourceSnapshots": [
+    {
+      "url": "https://arxiv.org/html/2404.03091v1",
+      "fetchedAt": "2026-09-04T22:14:12.285066+00:00",
+      "sha256": "b61b94dde25dd23b8ace0c316f676587dfe738a15affbe6d9f41f66173487fa2"
+    },
+    {
+      "url": "https://arxiv.org/html/2409.07222v1",
+      "fetchedAt": "2026-09-04T22:14:11.967113+00:00",
+      "sha256": "20571ca3ace283296b62678c32232a8adaabfe0c41f3f9bd6d3bfd28718b1648"
+    },
+    {
+      "url": "https://blogs.distributed.net/2022/11/23/03/28/bovine/",
+      "fetchedAt": "2026-09-04T22:14:12.896593+00:00",
+      "sha256": "991eb039009a6dc47ffb75798bae706964aa0014f3ef9181b7286e68526088df"
+    },
+    {
+      "url": "https://arxiv.org/html/2607.09688v1",
+      "fetchedAt": "2026-09-04T22:14:12.064946+00:00",
+      "sha256": "b11b5c5a06b95df2ac4c3f89d8e44392d13fb11f46c594d2d9ce39a3cecdd097"
+    }
+  ],
+  "disposition": "needs_work",
+  "revisionHistory": [
+    {
+      "promptVersion": "1.0.0",
+      "scope": "Original full scouting, literature review and implementation"
+    },
+    {
+      "promptVersion": "1.1.0",
+      "scope": "Full prompt read and applied again after user approved platform verification; contract and provenance amended, research evidence retained."
+    }
+  ]
+}

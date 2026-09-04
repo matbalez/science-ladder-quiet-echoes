@@ -1,0 +1,16 @@
+{
+  "kind": "LocalReferenceReproduction",
+  "official": false,
+  "reference": "https://arxiv.org/html/2409.07222v1#S4",
+  "length": 512,
+  "scoreTicks": "17996",
+  "meritFactorNumerator": "262144",
+  "meritFactorDenominator": "35992",
+  "peakSidelobe": 32,
+  "sequenceSha256": "865755a961c3c2a0a7982c7eb9fe8589a2d80f62d1915624ac9d39ff07f45e92",
+  "comparison": {
+    "name": "Rudin\u2013Shapiro construction",
+    "energy": 43776
+  },
+  "claim": "Reproduction of published data. No new sequence, official receipt or optimality proof."
+}

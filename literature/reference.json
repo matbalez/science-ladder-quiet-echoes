@@ -1,0 +1,20 @@
+{
+  "length": 512,
+  "hex": "fffffff0000ffc007f01fc06c36393c9e0f19e4f2793e69f0eccb66cb663e3a727b6b663ce63cced29e6b1a72c69d2969cb1b634e54a952a554aad5552aaaaaa",
+  "encoding": "Big-endian hexadecimal;1 maps to +1 and0 to -1; preserve exactly512 bits.",
+  "reportedMeritFactor": "7.2834",
+  "reproducedEnergy": "17996",
+  "source": "https://arxiv.org/html/2409.07222v1#S4",
+  "location": "Table2, length512 row; Section4 explains hex encoding",
+  "authors": [
+    "Blaž Pšeničnik",
+    "Rene Mlinarič",
+    "Janez Brest",
+    "Borko Bošković"
+  ],
+  "title": "Dual-Step Optimization for Binary Sequences with High Merit Factors",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "changes": "One row extracted; hexadecimal sequence converted to ASCII + and - with one LF.",
+  "status": "Published reference reproduced locally; not a new solve or proof of optimality."
+}
