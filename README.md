@@ -18,7 +18,9 @@ The reference is in `fixtures/baseline/sequence.txt`. `fixtures/valid/sequence.t
 
 ## Reproduce locally
 
-Python 3.13 or newer, standard library only:
+The default solver setup is Git and Python 3.13 or newer on macOS or Linux, using only the standard library. Docker Desktop is not required. The native instructions currently target macOS and Linux; Windows support is deferred. You can inspect sequences in the browser explorer without installing anything.
+
+From the exact challenge checkout, reproduce the baseline before searching:
 
 ```sh
 python3 tools/reproduce.py --check
@@ -29,7 +31,9 @@ python3 checker.py --submission fixtures/baseline --suite suite --output .local/
 
 The checker refuses to overwrite an existing result; remove your previous local output or choose a fresh path when repeating that last command.
 
-With the Science Ladder CLI:
+For each candidate, run the same checker with `--submission` pointing to your artifact-only directory, and choose a fresh `--output` file. These native runs provide local feedback; only hosted verification produces platform receipts.
+
+The Science Ladder CLI is needed for artifact digesting and CLI submission, and GitHub CLI is needed if publishing through `gh`. They can be installed when the candidate is ready. The container suite is an optional extra check using the pinned runtime and a running Docker-compatible daemon; Docker Desktop is one possible provider, not a prerequisite for solving. With those optional tools available:
 
 ```sh
 sl candidate lint science-ladder-candidate.yaml
