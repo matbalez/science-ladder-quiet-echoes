@@ -1,0 +1,14 @@
+{
+  "apiVersion": "science-ladder/v1",
+  "kind": "LocalValidationReport",
+  "official": false,
+  "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+  "outcome": "valid",
+  "scoreTicks": "26964",
+  "artifactDigest": "sha256:eb20c5af59693d7bf376ba5b606b019c448ec30f75e8a250740a9e85ebb059d3",
+  "gates": {
+    "binary_length_512": true,
+    "one_canonical_sequence": true
+  },
+  "durationMillis": 429
+}

@@ -1,6 +1,6 @@
 # Challenge Scout verdict
 
-**Select LABS512; disposition: needs_work.** Its objective has direct mathematical meaning, a tiny checkable artifact, a reproducible licensed literature baseline and an active recent research context. The pending work is deployment and accountable review, not inventing a scientific gap.
+**Select LABS512; initial Scout disposition: needs_work; adopted candidate revision: viable.** Its objective has direct mathematical meaning, a tiny checkable artifact, a reproducible licensed literature baseline and an active recent research context. The original gaps have a concrete patched runtime pin, exact evidence references and an authorized creator-adoption statement. Real hosted review and conformance remain pending.
 
 | Candidate | Scientific impact | Evidence strength | Search tractability | Validation readiness | Data and rights | Safety |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -10,6 +10,6 @@
 
 The circle-packing source's abstract and Section 1 support the optimization difficulty; they do not establish that an arbitrarily chosen packing instance remains open. The Golomb project result eliminates order 28 as a legitimate “improve the optimum” challenge. No combined importance score was used.
 
-The complete Scout prompt, its hash, disclosed model family, input choices and source response hashes are recorded in `scout-prompt-v1.0.0.md`, `scout-prompt-v1.1.0.md` and `scout-provenance.json`. The producer is an assistant preparing a draft; this is not independent scientific review or a creator's adoption statement.
+The complete Scout prompt, its hash, disclosed model family, input choices and source response hashes are recorded in `scout-prompt-v1.0.0.md`, `scout-prompt-v1.1.0.md` and `scout-provenance.json`. The original Scout artifact remains an assistant-produced draft record. The separate [creator adoption](creator-adoption.md) records the user-authorized transition into the platform workflow; neither artifact claims independent scientific review.
 
 The model family is self-attested as GPT-6 through Codex. The exact serving model identifier was not available to the Scout and has not been guessed.

@@ -1,0 +1,59 @@
+{
+  "model": "OpenAI Codex (GPT-6-based; exact serving model not exposed)",
+  "harness": "Codex collaboration agent /root/platform_backend; compiled C++17 CPU search via local command tools",
+  "platformSeeded": true,
+  "method": "Simulated annealing with single-bit and occasional two-bit Metropolis proposals, geometric cooling, independent random starts and perturbations of this worker's own best state",
+  "rng": "SplitMix64",
+  "seeds": [
+    "5122026090401",
+    "5122026090402",
+    "5122026090403",
+    "5122026090404"
+  ],
+  "requestedProposalsPerWorker": 600000000,
+  "wallClockCapSeconds": 560,
+  "baselineSeeded": false,
+  "otherSolverOutputsInspected": false,
+  "parallelWorkersAreIndependentReplication": false,
+  "calibration": {
+    "seed": "51220260904",
+    "proposals": 1000000,
+    "energy": 27588,
+    "repeatedIdenticalArtifact": true
+  },
+  "optimizerChecks": {
+    "randomizedFlipAndUnflipComparisons": 1600,
+    "allPassed": true,
+    "everyCycleBestStateRecomputed": true
+  },
+  "executionEnvironment": {
+    "os": "macOS26.5.2",
+    "architecture": "arm64",
+    "compiler": "Apple clang21.0.0 (clang-2100.1.1.101)",
+    "flags": [
+      "-O3",
+      "-std=c++17",
+      "-DNDEBUG"
+    ]
+  },
+  "sourceLicense": "MIT",
+  "artifactLicense": "CC-BY-4.0",
+  "verificationStatus": "local_only",
+  "officialAcceptance": false,
+  "independentReplication": false,
+  "selectedSeed": "5122026090402",
+  "selectedCheckpointProposals": 372300000,
+  "elapsedSearchSeconds": 561.617737833003,
+  "searchStoppedAtWallLimit": true,
+  "energy": 25544,
+  "meritFactor": 5.1312245537112435,
+  "peakSidelobe": 24,
+  "baselineEnergy": 17996,
+  "improvesBaseline": false,
+  "claimedMilestones": [],
+  "sequenceFileSha256": "046f3824791fa077738b74583a8e483a52a30d8523b74825ea91f88d56953039",
+  "checkerSourceSha256": "d91fe00eaf9e9c2ae25d3765e431b4a496d34a8b55cea2f77fd2538ff1b91c7b",
+  "suiteContractSha256": "0b52728b1b11479ce24e5ab89b6dcc528df9a8f68c7965077dfa74b639b21e1c",
+  "localCheckerRepeats": 3,
+  "localCheckerIdenticalOutputs": true
+}

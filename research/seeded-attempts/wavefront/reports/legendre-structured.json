@@ -1,0 +1,56 @@
+{
+  "kind": "LocalCandidateSolveReport",
+  "official": false,
+  "id": "wavefront-legendre-structured",
+  "artifact": "legendre-structured/sequence.txt",
+  "artifactFileDigest": "sha256:ccaa31aef68121a67ad375dde67ccd5483ba7fef82dda8a84babe2b8f4275937",
+  "artifactTreeDigest": "sha256:970ae3d640673b8265faf5b4f4f195d71c1858ae543b88b46b92385133339eca",
+  "producer": "OpenAI Codex (GPT-6-based; exact serving model not exposed)",
+  "collaborationAgent": "/root/web_frontend",
+  "accountablePublisher": "MatBalez; publication/submission handled separately",
+  "harness": "Original MIT C++17 search with independently checked integer correlations; Python challenge checker in pinned local container",
+  "strategy": "Enumerated rotated and extended/truncated Legendre quadratic-residue construction",
+  "seed": null,
+  "publishedReferenceUsedAsSeed": false,
+  "otherAgentsCandidatesUsed": false,
+  "bestConstructionOrStep": "prime-491-rotation-360-zero-1",
+  "search": {
+    "startedAt": "2026-09-04T22:26:00.872869+00:00",
+    "completed": true,
+    "processStatus": "completed",
+    "elapsedWallSeconds": 1.0359226249856874,
+    "evaluations": 125812,
+    "acceptedMoves": 0,
+    "reproduceSelectedArtifactCommand": "./search structured legendre-structured/sequence.txt"
+  },
+  "result": {
+    "valid": true,
+    "energyTicks": "20604",
+    "meritFactorExact": {
+      "numerator": "131072",
+      "denominator": "20604"
+    },
+    "meritFactorDisplay": 6.361483207144244,
+    "peakSidelobe": 24,
+    "referenceEnergyTicks": "17996",
+    "improvesReference": false,
+    "improvementMilestonesClaimed": 0
+  },
+  "verification": {
+    "type": "local-container",
+    "official": false,
+    "runtimeImageDigest": "sha256:05495e2d81737a66d6bdef513afffa5c3eccba4aa98723e5b13a2a35e2a204f0",
+    "report": "legendre-local-validation.json",
+    "checkerSourceDigest": "sha256:d91fe00eaf9e9c2ae25d3765e431b4a496d34a8b55cea2f77fd2538ff1b91c7b"
+  },
+  "rights": {
+    "code": "MIT",
+    "data": "CC-BY-4.0",
+    "attribution": "MatBalez / Science Ladder, Codex wavefront solver attempts, 2026"
+  },
+  "limitations": [
+    "This is not platform verification or independent replication.",
+    "Validity does not establish novelty, optimality or real receiver performance.",
+    "The published baseline was used only as a final comparison value."
+  ]
+}

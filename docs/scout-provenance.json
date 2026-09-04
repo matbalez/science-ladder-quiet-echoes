@@ -44,5 +44,15 @@
       "promptVersion": "1.1.0",
       "scope": "Full prompt read and applied again after user approved platform verification; contract and provenance amended, research evidence retained."
     }
-  ]
+  ],
+  "creatorAdoptionRevision": {
+    "disposition": "viable",
+    "producer": "OpenAI Codex for MatBalez; creator adoption explicitly authorized",
+    "runtimeImageDigest": "sha256:a8136bf6f5082a72776f2565f279a6c336b462da483aa54cfa81586ad20705fa",
+    "statement": "creator-adoption.md",
+    "sourceEvidence": "source-evidence.json",
+    "hostedReview": "pending",
+    "hostedConformance": "pending",
+    "independentReplication": false
+  }
 }

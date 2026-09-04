@@ -1,0 +1,43 @@
+{
+  "workers": [
+    {
+      "seed": "5122026090401",
+      "iterationsCompleted": 373200000,
+      "cyclesCompleted": 1244,
+      "energy": 25848,
+      "length": 512,
+      "requestedIterations": 600000000,
+      "returnCode": -15
+    },
+    {
+      "seed": "5122026090402",
+      "iterationsCompleted": 372300000,
+      "cyclesCompleted": 1241,
+      "energy": 25544,
+      "length": 512,
+      "requestedIterations": 600000000,
+      "returnCode": -15
+    },
+    {
+      "seed": "5122026090403",
+      "iterationsCompleted": 372000000,
+      "cyclesCompleted": 1240,
+      "energy": 25852,
+      "length": 512,
+      "requestedIterations": 600000000,
+      "returnCode": -15
+    },
+    {
+      "seed": "5122026090404",
+      "iterationsCompleted": 372300000,
+      "cyclesCompleted": 1241,
+      "energy": 26012,
+      "length": 512,
+      "requestedIterations": 600000000,
+      "returnCode": -15
+    }
+  ],
+  "elapsedSeconds": 561.617737833003,
+  "method": "random-start simulated annealing with own-best perturbations",
+  "baselineSeeded": false
+}

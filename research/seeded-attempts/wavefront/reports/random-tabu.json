@@ -1,0 +1,73 @@
+{
+  "kind": "LocalCandidateSolveReport",
+  "official": false,
+  "id": "wavefront-random-tabu",
+  "artifact": "random-tabu/sequence.txt",
+  "artifactFileDigest": "sha256:95445aa9e970cc25bf091cee478c469d589de199904336378ba104ff82584128",
+  "artifactTreeDigest": "sha256:eb20c5af59693d7bf376ba5b606b019c448ec30f75e8a250740a9e85ebb059d3",
+  "producer": "OpenAI Codex (GPT-6-based; exact serving model not exposed)",
+  "collaborationAgent": "/root/web_frontend",
+  "accountablePublisher": "MatBalez; publication/submission handled separately",
+  "harness": "Original MIT C++17 search with independently checked integer correlations; Python challenge checker in pinned local container",
+  "strategy": "Seeded random multistart tabu search",
+  "seed": 2026090401,
+  "publishedReferenceUsedAsSeed": false,
+  "otherAgentsCandidatesUsed": false,
+  "bestConstructionOrStep": "restart-45-step-2895",
+  "search": {
+    "startedAt": "2026-09-04T22:26:41.444031+00:00",
+    "completed": false,
+    "processStatus": "budget_exhausted_best_so_far",
+    "elapsedWallSeconds": 540.0120498330216,
+    "evaluations": null,
+    "acceptedMoves": null,
+    "reproduceSelectedArtifactCommand": "./search random random-tabu/sequence.txt 46 3200 2026090401",
+    "plannedCommand": "./search random random-tabu/sequence.txt 512 3200 2026090401",
+    "plannedRestarts": 512,
+    "stepsPerRestart": 3200,
+    "wallTimeCapSeconds": 540,
+    "evaluationsAtBest": 75210240,
+    "bestFoundAtElapsedSeconds": 27.9743,
+    "totalEvaluationsKnown": false,
+    "winningPrefixReproduction": {
+      "completed": true,
+      "elapsedSeconds": 30.670922874996904,
+      "restarts": 46,
+      "stepsPerRestart": 3200,
+      "seed": 2026090401,
+      "artifactBytesIdentical": true,
+      "evaluations": 75366400,
+      "acceptedMoves": 147200
+    }
+  },
+  "result": {
+    "valid": true,
+    "energyTicks": "26964",
+    "meritFactorExact": {
+      "numerator": "131072",
+      "denominator": "26964"
+    },
+    "meritFactorDisplay": 4.860999851654057,
+    "peakSidelobe": 24,
+    "referenceEnergyTicks": "17996",
+    "improvesReference": false,
+    "improvementMilestonesClaimed": 0
+  },
+  "verification": {
+    "type": "local-container",
+    "official": false,
+    "runtimeImageDigest": "sha256:05495e2d81737a66d6bdef513afffa5c3eccba4aa98723e5b13a2a35e2a204f0",
+    "report": "random-local-validation.json",
+    "checkerSourceDigest": "sha256:d91fe00eaf9e9c2ae25d3765e431b4a496d34a8b55cea2f77fd2538ff1b91c7b"
+  },
+  "rights": {
+    "code": "MIT",
+    "data": "CC-BY-4.0",
+    "attribution": "MatBalez / Science Ladder, Codex wavefront solver attempts, 2026"
+  },
+  "limitations": [
+    "This is not platform verification or independent replication.",
+    "Validity does not establish novelty, optimality or real receiver performance.",
+    "The published baseline was used only as a final comparison value."
+  ]
+}

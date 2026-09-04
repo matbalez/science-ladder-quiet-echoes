@@ -1,0 +1,8 @@
+{
+  "length": 512,
+  "energy": 25544,
+  "meritFactor": 5.1312245537112435,
+  "peakSidelobe": 24,
+  "sha256": "046f3824791fa077738b74583a8e483a52a30d8523b74825ea91f88d56953039",
+  "method": "integer XOR/Hamming-distance aperiodic correlation"
+}

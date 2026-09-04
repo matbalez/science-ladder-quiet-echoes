@@ -2,7 +2,7 @@
 
 **A 512-bit search for cleaner signals.** Submit one small text file. The checker measures the exact total energy of its aperiodic autocorrelation sidelobes.
 
-This is a Science Ladder challenge draft. Its baseline is a real, attributed published sequence, reproduced locally at **E = 17,996**, with merit factor **7.2833963103** and peak sidelobe **32**. Every milestone requires a lower energy. No new result, creator adoption, hosted acceptance or independent replication is claimed by this repository.
+This is an adopted Science Ladder challenge candidate awaiting hosted review and conformance. Its baseline is a real, attributed published sequence, reproduced locally at **E = 17,996**, with merit factor **7.2833963103** and peak sidelobe **32**. Every milestone requires a lower energy. MatBalez authorized creator adoption through Codex, recorded in [the adoption statement](docs/creator-adoption.md). No new record, passing hosted acceptance or independent replication is claimed by this repository.
 
 Open [visualize.html](visualize.html) to explore the reference pulse, sidelobes and spectrum, or load a candidate file. All displayed measurements are calculated from the selected data. The visual explorer is an educational local preview; only the platform checker can issue a platform verification receipt.
 
@@ -35,7 +35,7 @@ sl challenge lint science-ladder.yaml
 sl challenge test --manifest science-ladder.yaml --unsafe-local
 ```
 
-The local container path uses the exact runtime digest in the manifest. That digest is a real test image with unresolved vulnerability findings. A passing local fixture suite cannot approve the image or bypass hosted preflight. The runtime pin must be reviewed and updated through the actual platform process before publication.
+The local container path uses the exact runtime digest in the manifest. It now pins the published patched runtime `sha256:a8136bf6f5082a72776f2565f279a6c336b462da483aa54cfa81586ad20705fa`. Local checks against that image are recorded separately from the historical reports. Actual hosted vulnerability-policy checks, scientific review and machine preflight must still pass before publication.
 
 ## Research and contributions
 

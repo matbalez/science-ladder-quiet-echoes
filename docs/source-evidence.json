@@ -1,0 +1,39 @@
+{
+  "kind": "CreatorSourceEvidenceRevision",
+  "recordedAt": "2026-09-04T22:46:36.168094+00:00",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2409.07222v1",
+      "title": "Dual-Step Optimization for Binary Sequences with High Merit Factors",
+      "evidence": "our approach has successfully identified new best-known binary sequences for all lengths ranging from 450 to 527",
+      "location": "Abstract, final paragraph; historical claim from the 2024 paper, not a claim about the present frontier",
+      "accessedAt": "2026-09-04",
+      "identifier": "arXiv:2409.07222v1",
+      "publicationDate": "2024-09-11",
+      "responseDigest": "sha256:312dbc672efeb9501eb59583a604e064e6173d461c91a53681ca047ae6e15ce9",
+      "responseCopy": "Private research cache; not shipped in source repository"
+    },
+    {
+      "url": "https://arxiv.org/html/2409.07222v1",
+      "title": "Dual-Step Optimization: exact length 512 reference",
+      "evidence": "512 7.0942 7.2834",
+      "location": "Table 2, length 512 row: length, previous merit factor, new reported merit factor. The full row is reproduced in literature/reference.json; our integer recomputation gives E = 17996. That energy is a computation, not a quoted paper value.",
+      "accessedAt": "2026-09-04",
+      "identifier": "arXiv:2409.07222v1",
+      "responseDigest": "sha256:20571ca3ace283296b62678c32232a8adaabfe0c41f3f9bd6d3bfd28718b1648",
+      "responseCopy": "Private research cache; not shipped in source repository"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.09688v1",
+      "title": "Prioritizing Search Space Regions in the Low Autocorrelation Binary Sequences Problem",
+      "evidence": "improves the previously best-known results for 35 sequence lengths",
+      "location": "Abstract, experimental-results paragraph. Full-text Table 3 was separately inspected; length 512 is absent from that improvement table, a bounded comparison rather than proof of a current world record.",
+      "accessedAt": "2026-09-04",
+      "identifier": "arXiv:2607.09688v1",
+      "publicationDate": "2026-06-17",
+      "responseDigest": "sha256:2eb7bebe1280d5e50df389ae7acacc8d4499ff5e7d2924ac1dfe0cd38a25b5af",
+      "responseCopy": "Private research cache; not shipped in source repository"
+    }
+  ],
+  "interpretation": "Short exact excerpts identify retrieved primary evidence. Metadata dates are reported by versioned arXiv citation_date fields. E=17996 is independently recomputed from the exact Table 2 sequence. The 2026 comparison and bounded-current-best limitation remain in challenge-brief.md. Hosted source resolution and scientific review remain unperformed."
+}

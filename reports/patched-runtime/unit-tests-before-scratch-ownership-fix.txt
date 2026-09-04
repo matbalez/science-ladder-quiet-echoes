@@ -1,0 +1,280 @@
+test_byte_count_checked_before_read (test_checker.ArtifactTests.test_byte_count_checked_before_read) ... ERROR
+test_extra_files_nested_paths_and_empty_directory (test_checker.ArtifactTests.test_extra_files_nested_paths_and_empty_directory) ... ERROR
+test_json_parser_tricks_and_numeric_inputs_rejected (test_checker.ArtifactTests.test_json_parser_tricks_and_numeric_inputs_rejected) ... ERROR
+test_malformed_encoding_empty_and_overlarge (test_checker.ArtifactTests.test_malformed_encoding_empty_and_overlarge) ... ERROR
+test_suite_cannot_override_length_or_supply_scores (test_checker.ArtifactTests.test_suite_cannot_override_length_or_supply_scores) ... ERROR
+test_symlink_hardlink_and_fifo_rejected_without_hang (test_checker.ArtifactTests.test_symlink_hardlink_and_fifo_rejected_without_hang) ... ERROR
+test_valid_complete_result (test_checker.ArtifactTests.test_valid_complete_result) ... ok
+test_wrong_length_or_alphabet_never_scores_valid (test_checker.ArtifactTests.test_wrong_length_or_alphabet_never_scores_valid) ... ERROR
+test_equivalent_symmetries_do_not_create_improvements (test_checker.MathematicsTests.test_equivalent_symmetries_do_not_create_improvements) ... ok
+test_extremal_boundary_and_construction (test_checker.MathematicsTests.test_extremal_boundary_and_construction) ... ok
+test_full_size_deterministic_vectors (test_checker.MathematicsTests.test_full_size_deterministic_vectors) ... ok
+test_independent_implementations_exhaustive_small_instances (test_checker.MathematicsTests.test_independent_implementations_exhaustive_small_instances) ... ok
+test_reference_reproduces_exact_published_value (test_checker.MathematicsTests.test_reference_reproduces_exact_published_value) ... ok
+test_exact_output_repeatability_and_failure_has_no_score (test_checker.ProcessTests.test_exact_output_repeatability_and_failure_has_no_score) ... ERROR
+test_local_harness_enforces_timeout_for_stalled_process (test_checker.ProcessTests.test_local_harness_enforces_timeout_for_stalled_process) ... ok
+test_output_cannot_overwrite_existing_file (test_checker.ProcessTests.test_output_cannot_overwrite_existing_file) ... ERROR
+
+======================================================================
+ERROR: test_byte_count_checked_before_read (test_checker.ArtifactTests.test_byte_count_checked_before_read)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 99, in test_byte_count_checked_before_read
+    with artifact() as root:
+         ~~~~~~~~^^
+  File "/usr/local/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/sl/challenge/tests/test_checker.py", line 32, in artifact
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_extra_files_nested_paths_and_empty_directory (test_checker.ArtifactTests.test_extra_files_nested_paths_and_empty_directory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 104, in test_extra_files_nested_paths_and_empty_directory
+    with artifact() as root:
+         ~~~~~~~~^^
+  File "/usr/local/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/sl/challenge/tests/test_checker.py", line 32, in artifact
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_json_parser_tricks_and_numeric_inputs_rejected (test_checker.ArtifactTests.test_json_parser_tricks_and_numeric_inputs_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 89, in test_json_parser_tricks_and_numeric_inputs_rejected
+    with artifact(payload) as root:
+         ~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/sl/challenge/tests/test_checker.py", line 32, in artifact
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_malformed_encoding_empty_and_overlarge (test_checker.ArtifactTests.test_malformed_encoding_empty_and_overlarge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 94, in test_malformed_encoding_empty_and_overlarge
+    with artifact(payload) as root:
+         ~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/sl/challenge/tests/test_checker.py", line 32, in artifact
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_suite_cannot_override_length_or_supply_scores (test_checker.ArtifactTests.test_suite_cannot_override_length_or_supply_scores)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 127, in test_suite_cannot_override_length_or_supply_scores
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_symlink_hardlink_and_fifo_rejected_without_hang (test_checker.ArtifactTests.test_symlink_hardlink_and_fifo_rejected_without_hang)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 114, in test_symlink_hardlink_and_fifo_rejected_without_hang
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_wrong_length_or_alphabet_never_scores_valid (test_checker.ArtifactTests.test_wrong_length_or_alphabet_never_scores_valid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 83, in test_wrong_length_or_alphabet_never_scores_valid
+    with artifact(payload) as root:
+         ~~~~~~~~^^^^^^^^^
+  File "/usr/local/lib/python3.13/contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "/sl/challenge/tests/test_checker.py", line 32, in artifact
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_exact_output_repeatability_and_failure_has_no_score (test_checker.ProcessTests.test_exact_output_repeatability_and_failure_has_no_score)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 139, in test_exact_output_repeatability_and_failure_has_no_score
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+======================================================================
+ERROR: test_output_cannot_overwrite_existing_file (test_checker.ProcessTests.test_output_cannot_overwrite_existing_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/sl/challenge/tests/test_checker.py", line 148, in test_output_cannot_overwrite_existing_file
+    with tempfile.TemporaryDirectory() as folder:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 887, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 370, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 312, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/tempfile.py", line 305, in _gettempdir
+    tempdir = _get_default_tempdir()
+  File "/usr/local/lib/python3.13/tempfile.py", line 222, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+                            "No usable temporary directory found in %s" %
+                            dirlist)
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/sl/challenge']
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.989s
+
+FAILED (errors=9)

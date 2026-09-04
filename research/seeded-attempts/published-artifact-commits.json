@@ -1,0 +1,23 @@
+[
+  {
+    "repository": "matbalez/science-ladder-quiet-echoes",
+    "sourceCommit": "54fe162096c9338fbc30d1b1f2454a7e45812b97",
+    "ref": "refs/heads/solutions/legendre-structured",
+    "fileSha256": "ccaa31aef68121a67ad375dde67ccd5483ba7fef82dda8a84babe2b8f4275937",
+    "url": "https://github.com/matbalez/science-ladder-quiet-echoes/tree/54fe162096c9338fbc30d1b1f2454a7e45812b97"
+  },
+  {
+    "repository": "matbalez/science-ladder-quiet-echoes",
+    "sourceCommit": "b8740cfde383e268eab26d350266161aa5d50733",
+    "ref": "refs/heads/solutions/random-tabu",
+    "fileSha256": "95445aa9e970cc25bf091cee478c469d589de199904336378ba104ff82584128",
+    "url": "https://github.com/matbalez/science-ladder-quiet-echoes/tree/b8740cfde383e268eab26d350266161aa5d50733"
+  },
+  {
+    "repository": "matbalez/science-ladder-quiet-echoes",
+    "sourceCommit": "e9d54e1d9c6a7ac3ef4d5797d2ef8576a7baf985",
+    "ref": "refs/heads/solutions/simulated-annealing",
+    "fileSha256": "046f3824791fa077738b74583a8e483a52a30d8523b74825ea91f88d56953039",
+    "url": "https://github.com/matbalez/science-ladder-quiet-echoes/tree/e9d54e1d9c6a7ac3ef4d5797d2ef8576a7baf985"
+  }
+]

@@ -4,28 +4,37 @@
   "kind": "ChallengeManifest",
   "id": "quiet-echoes-labs512-v1",
   "createdAt": "2026-09-04T22:21:15Z",
-  "producer": "Codex draft for MatBalez; accountable creator adoption pending",
+  "producer": "MatBalez via Codex; platform-seeded creator adoption under explicit user authorization",
   "slug": "quiet-echoes-labs512",
   "title": "Quiet Echoes: the 512-bit signal challenge",
   "summary": "Lower exact sidelobe energy of a 512-chip binary pulse below a reproduced literature reference. A small artifact, a vast search space, and a score anyone can recompute.",
   "scientificQuestion": "Can a length 512 sequence of +1 and -1 achieve aperiodic sidelobe energy E below 17996, the best inspected and reproduced published reference?",
   "evidence": [
     {
-      "url": "https://arxiv.org/html/2409.07222v1",
+      "url": "https://arxiv.org/abs/2409.07222v1",
       "title": "Dual-Step Optimization for Binary Sequences with High Merit Factors",
-      "evidence": "Section 4 and Table 2 provide an exact 512-bit reference. Our independent integer recomputation gives E = 17996, F = 7.283396310291176. This is a reproduced published construction, not new science.",
-      "location": "Section 1 equations1–2; Section 4; Table 2 length 512 row",
+      "evidence": "our approach has successfully identified new best-known binary sequences for all lengths ranging from 450 to 527",
+      "location": "Abstract, final paragraph; historical claim from the 2024 paper, not a claim about the present frontier",
       "accessedAt": "2026-09-04",
       "identifier": "arXiv:2409.07222v1",
       "publicationDate": "2024-09-11"
     },
     {
-      "url": "https://arxiv.org/html/2607.09688v1",
-      "title": "Prioritizing Search Space Regions in the Low Autocorrelation Binary Sequences Problem",
-      "evidence": "Results and Table 3 report later improvements at 35 lengths in 450–527 and at 573. Length 512 is absent from that improvement table. Our bounded search found no later 512 record; this is not proof that none exists.",
-      "location": "Results, Table 3, Conclusion",
+      "url": "https://arxiv.org/html/2409.07222v1",
+      "title": "Dual-Step Optimization: exact length 512 reference",
+      "evidence": "512 7.0942 7.2834",
+      "location": "Table 2, length 512 row: length, previous merit factor, new reported merit factor. The full row is reproduced in literature/reference.json; our integer recomputation gives E = 17996. That energy is a computation, not a quoted paper value.",
       "accessedAt": "2026-09-04",
-      "identifier": "arXiv:2607.09688v1"
+      "identifier": "arXiv:2409.07222v1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.09688v1",
+      "title": "Prioritizing Search Space Regions in the Low Autocorrelation Binary Sequences Problem",
+      "evidence": "improves the previously best-known results for 35 sequence lengths",
+      "location": "Abstract, experimental-results paragraph. Full-text Table 3 was separately inspected; length 512 is absent from that improvement table, a bounded comparison rather than proof of a current world record.",
+      "accessedAt": "2026-09-04",
+      "identifier": "arXiv:2607.09688v1",
+      "publicationDate": "2026-06-17"
     }
   ],
   "impact": "Low-autocorrelation sequence design connects discrete optimization, Ising spin models and pulse compression. This finite benchmark measures total idealized sidelobe energy; it does not establish real radar, sonar, GNSS or quantum-system performance.",
@@ -34,7 +43,7 @@
     "One binary sequence at one length does not prove global optimality or an asymptotic merit-factor conjecture.",
     "Total sidelobe energy and peak sidelobe level are different objectives. A better score can have a higher individual peak.",
     "No Doppler, noise, bandwidth, cross-correlation, hardware or multi-target robustness is scored.",
-    "The current runtime pin is a real locally tested build, pending vulnerability disposition and actual machine preflight. Creator adoption and public acceptance remain unperformed."
+    "The runtime is pinned to a real patched image. Creator adoption is authorized; actual hosted scientific review, vulnerability-policy checks, machine preflight and publication remain separate requirements. Local test reports do not satisfy hosted verification or independent replication."
   ],
   "safetyClassification": "low-risk-computational",
   "economicMode": "none",
@@ -98,7 +107,7 @@
       "/sl/challenge/checker.py"
     ],
     "dependencyLock": "requirements.lock",
-    "runtimeImageDigest": "sha256:05495e2d81737a66d6bdef513afffa5c3eccba4aa98723e5b13a2a35e2a204f0"
+    "runtimeImageDigest": "sha256:a8136bf6f5082a72776f2565f279a6c336b462da483aa54cfa81586ad20705fa"
   },
   "suite": {
     "visibility": "public",

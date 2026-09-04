@@ -1,0 +1,124 @@
+{
+  "fixtures": [
+    {
+      "fixture": "baseline",
+      "passed": true,
+      "report": {
+        "apiVersion": "science-ladder/v1",
+        "kind": "LocalValidationReport",
+        "official": false,
+        "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+        "outcome": "valid",
+        "scoreTicks": "17996",
+        "artifactDigest": "sha256:a64108c5f6383656a98bc881b769fd298fffe31860d32f541474a8d5856b217a",
+        "gates": {
+          "binary_length_512": true,
+          "one_canonical_sequence": true
+        },
+        "durationMillis": 403
+      }
+    },
+    {
+      "fixture": "valid",
+      "passed": true,
+      "report": {
+        "apiVersion": "science-ladder/v1",
+        "kind": "LocalValidationReport",
+        "official": false,
+        "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+        "outcome": "valid",
+        "scoreTicks": "43776",
+        "artifactDigest": "sha256:806cd0edb59f431ae210e77f8ed2ce84651d0b35d9cb5df00cd92f06c22a8281",
+        "gates": {
+          "binary_length_512": true,
+          "one_canonical_sequence": true
+        },
+        "durationMillis": 324
+      }
+    },
+    {
+      "fixture": "invalid",
+      "passed": true,
+      "report": {
+        "apiVersion": "science-ladder/v1",
+        "kind": "LocalValidationReport",
+        "official": false,
+        "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+        "outcome": "hard_gate_failed",
+        "scoreTicks": "44608256",
+        "artifactDigest": "sha256:6a157a9db5af1086b9cd26a4015945a2474a839ec94a5e09c34b2e4d8bf3e5c7",
+        "gates": {
+          "binary_length_512": false,
+          "one_canonical_sequence": true
+        },
+        "durationMillis": 385
+      }
+    },
+    {
+      "error": "file outside submission contract: forbidden.json",
+      "fixture": "malformed",
+      "passed": true,
+      "report": {
+        "apiVersion": "science-ladder/v1",
+        "kind": "LocalValidationReport",
+        "official": false,
+        "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+        "outcome": "invalid_output",
+        "durationMillis": 0
+      }
+    },
+    {
+      "fixture": "empty",
+      "passed": true,
+      "report": {
+        "apiVersion": "science-ladder/v1",
+        "kind": "LocalValidationReport",
+        "official": false,
+        "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+        "outcome": "hard_gate_failed",
+        "scoreTicks": "44608256",
+        "artifactDigest": "sha256:1ab3c2963f9fc8fc56390456f47b3a7cde264f507ec7523cceb64e4863079b1b",
+        "gates": {
+          "binary_length_512": false,
+          "one_canonical_sequence": false
+        },
+        "durationMillis": 319
+      }
+    },
+    {
+      "error": "artifact exceeds byte limit",
+      "fixture": "oversized",
+      "passed": true,
+      "report": {
+        "apiVersion": "science-ladder/v1",
+        "kind": "LocalValidationReport",
+        "official": false,
+        "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+        "outcome": "invalid_output",
+        "durationMillis": 0
+      }
+    },
+    {
+      "fixture": "maximum",
+      "passed": true,
+      "report": {
+        "apiVersion": "science-ladder/v1",
+        "kind": "LocalValidationReport",
+        "official": false,
+        "warning": "UNOFFICIAL local container run; not the production Firecracker execution profile",
+        "outcome": "valid",
+        "scoreTicks": "44608256",
+        "artifactDigest": "sha256:31ac2993bb63321416fe18b7f35c0fddd972154a97e8a4f88991fcbe2c805e94",
+        "gates": {
+          "binary_length_512": true,
+          "one_canonical_sequence": true
+        },
+        "durationMillis": 336
+      }
+    }
+  ],
+  "kind": "LocalConformanceReport",
+  "official": false,
+  "passed": true,
+  "warning": "Local conformance does not certify remote build reproducibility, host isolation or scientific validity."
+}

@@ -1,0 +1,4 @@
+/search
+*.dSYM/
+__pycache__/
+*.pyc
