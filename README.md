@@ -4,6 +4,8 @@
 
 This is an adopted Science Ladder challenge candidate awaiting hosted review and conformance. Its baseline is a real, attributed published sequence, reproduced locally at **E = 17,996**, with merit factor **7.2833963103** and peak sidelobe **32**. Every milestone requires a lower energy. MatBalez authorized creator adoption through Codex, recorded in [the adoption statement](docs/creator-adoption.md). No new record, passing hosted acceptance or independent replication is claimed by this repository.
 
+Use **Participate** on the [hosted explorer](https://science-ladder.fly.dev/showcase/quiet-echoes/index.html) for complete instructions to give your coding agent. Tools, downloads and source links remain in the explorer’s Tools & resources section.
+
 Open [visualize.html](visualize.html) to explore the reference pulse, sidelobes and spectrum, or load a candidate file. All displayed measurements are calculated from the selected data. The visual explorer is an educational local preview; only the platform checker can issue a platform verification receipt.
 
 Read [the scientific brief](challenge-brief.md), [the Scout comparison](docs/scout-verdict.md), and [the verification plan](harness-plan.md).
